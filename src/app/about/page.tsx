@@ -7,7 +7,7 @@ import { jsonLd } from "@/lib/metadata";
 export const metadata = createMetadata({
   title: "About — Our Story, Mission & Medical Research Background",
   description:
-    "Mapped Technologies was founded by physicians and researchers from Mayo Clinic, MD Anderson, Johns Hopkins, and other leading US institutions who partnered with AI engineers to build research-grade software for medical science.",
+    "Mapped Technologies was founded by physicians and researchers from leading US and international institutions who partnered with AI engineers to build research-grade software for medical science.",
   path: "/about",
 });
 
@@ -31,7 +31,7 @@ export default function AboutPage() {
           url: "https://mappedtechnologies.com",
           foundingDate: "2025",
           description:
-            "Research-grade software for medical science, founded by physicians and researchers from leading US institutions.",
+            "Research-grade software for medical science, founded by physicians and researchers from leading institutions.",
           knowsAbout: [
             "Systematic Reviews",
             "Meta-Analysis",
@@ -66,45 +66,54 @@ export default function AboutPage() {
               Our Story
             </p>
             <h1 className="mt-4 max-w-3xl font-brand text-3xl font-semibold tracking-tight md:text-4xl">
-              We built what we wished existed
+              The tools didn&apos;t exist. So we built them.
             </h1>
           </FadeIn>
           <FadeIn delay={0.1}>
             <div className="mt-8 max-w-2xl space-y-5 text-muted-foreground">
-              <p className="leading-relaxed">
-                Mapped Technologies was founded by physicians and researchers
-                working at institutions including Mayo Clinic, MD Anderson,
-                Baylor, the University of Minnesota, and Johns Hopkins. We
-                weren&apos;t building software companies. We were running
-                systematic reviews, extracting data from thousands of papers,
-                and watching months of work get consumed by processes that
-                should have taken days.
+              <p className="text-lg leading-relaxed text-foreground/80">
+                Every systematic review we ran followed the same pattern:
+                months of manual work, decisions buried in spreadsheets,
+                errors that surfaced too late to trace, and evidence that
+                aged faster than we could publish it. We knew something had
+                to change — because we were the ones living with the
+                consequences.
               </p>
               <p className="leading-relaxed">
-                The frustrations were the same across every institution:
-                bureaucracy around multi-site collaboration, manual operations
-                that consumed entire research cycles, error rates in screening
-                that exceeded 10% with no reliable way to trace where mistakes
-                originated, and evidence that went stale before it could
-                influence clinical practice.
+                We are physicians and medical researchers working across
+                leading academic medical centers and research institutions in
+                the United States, with collaborators at healthcare systems
+                internationally, including the NHS. For years, we shared the
+                same frustrations: multi-site studies slowed by institutional
+                bureaucracy, screening workflows where more than one in ten
+                decisions contained errors, and completed reviews that became
+                outdated before they could shape clinical guidelines.
               </p>
               <p className="leading-relaxed">
-                By early 2025, a shift in AI infrastructure changed what was
-                possible. Frontier models from Anthropic, OpenAI, and Google
-                reached a level of capability where they could meaningfully
-                assist in complex research tasks — not replace researchers,
-                but handle the mechanical work that wasted their time. That
-                convergence created a moment.
+                We didn&apos;t set out to start a technology company. We set
+                out to solve a problem we encountered every day. The gap
+                between what evidence synthesis demands and what existing
+                tools provide had been widening for years — and no one was
+                building what we actually needed.
               </p>
               <p className="leading-relaxed">
-                Our clinician-researchers began connecting with AI engineers
-                working at Philips and other medical technology companies —
-                people who understood both the technical possibilities and the
-                regulatory constraints of medical software. Together, we
-                decided to stop waiting for someone else to build what we
-                needed. We established Mapped Technologies to create
-                research-grade tools from the ground up, designed by the
-                people who use them.
+                By early 2025, that changed. A new generation of AI
+                infrastructure reached the level of reliability required for
+                research-grade applications — capable enough to handle the
+                mechanical burden of evidence synthesis, while keeping
+                researchers in full control of every scientific judgment.
+                That moment of convergence brought our clinical researchers
+                together with engineers from leading medical technology
+                companies who understood both the technical possibilities and
+                the regulatory realities of healthcare software.
+              </p>
+              <p className="leading-relaxed">
+                Together, we made a decision: stop adapting to tools that
+                weren&apos;t designed for how research actually works, and
+                start building the infrastructure that should have existed
+                all along. Mapped Technologies is the result — a company
+                founded by the people who use the tools, for the people who
+                use the tools.
               </p>
             </div>
           </FadeIn>
@@ -117,9 +126,9 @@ export default function AboutPage() {
               <p className="text-xs font-medium uppercase tracking-widest text-muted-foreground">
                 The Problem
               </p>
-              <h2 className="mt-4 font-brand text-2xl font-semibold tracking-tight md:text-3xl">
-                Evidence synthesis hasn&apos;t kept pace with the science it
-                serves
+              <h2 className="mt-4 max-w-2xl font-brand text-2xl font-semibold tracking-tight md:text-3xl">
+                Medical evidence is the foundation of patient care. The
+                process for producing it is failing.
               </h2>
             </FadeIn>
 
@@ -144,31 +153,34 @@ export default function AboutPage() {
             <FadeIn delay={0.2}>
               <div className="mt-12 max-w-2xl space-y-5 text-muted-foreground">
                 <p className="leading-relaxed">
-                  A single systematic review consumes an average of 1,139
-                  hours — roughly 30 weeks of full-time work across a research
+                  Consider the scale of the problem. A single systematic
+                  review consumes an average of 1,139 hours — nearly eight
+                  months of full-time effort distributed across a research
                   team. Human reviewers make errors in more than one out of
-                  every ten screening decisions, across hundreds of thousands
-                  of judgments. Nearly a third of registered protocols are
-                  abandoned before completion, and of the reviews that do get
-                  published, almost two-thirds are never updated.
+                  every ten screening decisions. Nearly a third of registered
+                  review protocols are abandoned before completion. And of
+                  the reviews that do reach publication, almost two-thirds
+                  are never updated.
                 </p>
                 <p className="leading-relaxed">
-                  Meanwhile, Cochrane&apos;s ambitious attempt at living
-                  systematic reviews during COVID-19 revealed the limits of
-                  current approaches: half of their living reviews went
-                  unmodified by mid-2023, and only one out of twenty-five
-                  successfully communicated its living status to readers. The
-                  methodology exists. The tooling does not.
+                  The evidence that clinical guidelines depend on is being
+                  produced by a process that is slow, error-prone, and
+                  largely manual. When Cochrane attempted living systematic
+                  reviews during COVID-19 — the moment when continuously
+                  updated evidence mattered most — half of their living
+                  reviews went unmodified by mid-2023. Only one in
+                  twenty-five successfully communicated its living status to
+                  readers.
                 </p>
                 <p className="leading-relaxed">
-                  The gap is widening. Both the FDA and EMA are moving toward
-                  continuous, real-time evidence requirements. The FDA
-                  launched its RWE-ACCELERATE initiative in 2025 and shifted
-                  to a single pivotal trial as the default basis for drug
-                  approval in February 2026. The EMA&apos;s DARWIN EU network
-                  now spans 40 data partners covering 160 million patients.
-                  Regulators are ready for living evidence. Researchers need
-                  the tools to produce it.
+                  Meanwhile, the regulatory environment is accelerating. The
+                  FDA launched its RWE-ACCELERATE initiative and shifted to
+                  accepting a single pivotal trial for drug approval. The
+                  EMA&apos;s DARWIN EU network now spans 40 data partners
+                  covering 160 million patients. Regulators are building the
+                  infrastructure for continuous evidence. The question is
+                  whether the research community has the tools to meet them
+                  there.
                 </p>
               </div>
             </FadeIn>
@@ -183,36 +195,42 @@ export default function AboutPage() {
                 Our Vision
               </p>
               <h2 className="mt-4 font-brand text-2xl font-semibold tracking-tight md:text-3xl">
-                Next-generation research infrastructure
+                From tools that assist to infrastructure that transforms
               </h2>
             </FadeIn>
             <FadeIn delay={0.1}>
               <div className="mt-8 max-w-2xl space-y-5 text-muted-foreground">
                 <p className="leading-relaxed">
-                  We are building the research infrastructure that the next
-                  decade of medical science requires. Not incremental
-                  improvements to screening tools, but end-to-end platforms
-                  that cover the full lifecycle — from research question to
-                  living, continuously updated evidence that meets regulatory
-                  standards.
+                  The evidence synthesis landscape today includes 388
+                  identified AI tools. Only 2% of them attempt end-to-end
+                  automation. The rest address individual steps — screening
+                  assistants, extraction helpers, statistical calculators.
+                  Useful in isolation. Insufficient for the shift that
+                  regulators, institutions, and patients are demanding.
                 </p>
                 <p className="leading-relaxed">
-                  There are 388 AI tools in the evidence synthesis landscape
-                  today. Only 2% attempt end-to-end automation. The rest are
-                  point solutions for individual steps — useful, but
-                  insufficient for the shift toward living evidence that
-                  regulators are demanding. We are building what should exist:
-                  production-grade platforms where AI handles the mechanical
-                  work and researchers retain full control over every
-                  scientific decision.
+                  We are building something different: complete,
+                  production-grade research platforms that cover the full
+                  evidence lifecycle. Not tools that assist one step of a
+                  broken workflow, but infrastructure that reimagines the
+                  workflow itself — where AI handles the mechanical burden
+                  and researchers retain full authority over every scientific
+                  decision.
                 </p>
                 <p className="leading-relaxed">
                   Our first product, mapped, covers the complete systematic
-                  review workflow. Our next — a living evidence platform for
-                  drug interventions and diagnostic accuracy — is designed
-                  for a regulatory world where the FDA, EMA, and national
-                  agencies expect evidence to stay current, not gather dust
-                  in a journal archive.
+                  review workflow from research question to published
+                  manuscript. Our next — a living evidence platform for drug
+                  interventions and diagnostic accuracy — is designed for
+                  the regulatory world that is already taking shape: one
+                  where evidence is expected to stay current, auditable, and
+                  ready for submission at any point, not published once and
+                  left to gather dust.
+                </p>
+                <p className="leading-relaxed">
+                  We believe the next decade of medical research will be
+                  defined by the quality of its infrastructure. We intend to
+                  build it.
                 </p>
               </div>
             </FadeIn>

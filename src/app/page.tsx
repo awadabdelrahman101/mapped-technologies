@@ -152,11 +152,13 @@ export default function HomePage() {
                 Built by researchers, for researchers
               </h2>
               <p className="mt-4 max-w-lg text-muted-foreground">
-                Founded by physicians and researchers from Mayo Clinic, MD
-                Anderson, Johns Hopkins, and other leading US institutions who
-                experienced the burden of evidence synthesis firsthand. When AI
-                infrastructure matured in 2025, they partnered with medical
-                technology engineers to build the tools they wished existed.
+                Founded by physicians and researchers from leading US
+                academic medical centers — with collaborators across
+                international healthcare systems — who experienced the
+                burden of evidence synthesis firsthand. When AI
+                infrastructure matured in 2025, they partnered with
+                engineers from medical technology companies to build the
+                tools they wished existed.
               </p>
             </FadeIn>
             <FadeIn delay={0.1}>
