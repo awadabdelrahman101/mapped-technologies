@@ -10,13 +10,25 @@ interface CreateMetadataOptions {
   description?: string;
   path?: string;
   noindex?: boolean;
+  keywords?: string[];
 }
+
+const DEFAULT_KEYWORDS = [
+  "mapped research",
+  "mapped technologies",
+  "systematic review software",
+  "AI evidence synthesis",
+  "living systematic review",
+  "medical research tools",
+  "meta-analysis platform",
+];
 
 export function createMetadata({
   title,
   description = DEFAULT_DESCRIPTION,
   path = "",
   noindex = false,
+  keywords,
 }: CreateMetadataOptions = {}): Metadata {
   const url = `${SITE_URL}${path}`;
   const fullTitle = title
@@ -26,6 +38,7 @@ export function createMetadata({
   return {
     title: fullTitle,
     description,
+    keywords: keywords ?? DEFAULT_KEYWORDS,
     metadataBase: new URL(SITE_URL),
     alternates: { canonical: url },
     openGraph: {

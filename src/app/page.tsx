@@ -52,6 +52,14 @@ export default function HomePage() {
             contactType: "general inquiry",
             url: "https://mappedtechnologies.com/contact",
           },
+          sameAs: ["https://mappedresearch.com"],
+          subOrganization: {
+            "@type": "Organization",
+            name: "mapped",
+            url: "https://mappedresearch.com",
+            description:
+              "AI-powered platform for systematic reviews and meta-analyses.",
+          },
         })}
       />
 
@@ -128,6 +136,37 @@ export default function HomePage() {
                 <span className="rounded-full border border-border/50 px-2.5 py-0.5 text-xs text-muted-foreground">
                   Live
                 </span>
+              </div>
+            </FadeIn>
+          </div>
+        </section>
+
+        {/* Origin Teaser */}
+        <section className="border-t border-border/50">
+          <div className="mx-auto max-w-5xl px-6 py-20 md:py-28">
+            <FadeIn>
+              <p className="text-xs font-medium uppercase tracking-widest text-muted-foreground">
+                Our Origin
+              </p>
+              <h2 className="mt-4 font-brand text-2xl font-semibold tracking-tight md:text-3xl">
+                Built by researchers, for researchers
+              </h2>
+              <p className="mt-4 max-w-lg text-muted-foreground">
+                Founded by physicians and researchers from Mayo Clinic, MD
+                Anderson, Johns Hopkins, and other leading US institutions who
+                experienced the burden of evidence synthesis firsthand. When AI
+                infrastructure matured in 2025, they partnered with medical
+                technology engineers to build the tools they wished existed.
+              </p>
+            </FadeIn>
+            <FadeIn delay={0.1}>
+              <div className="mt-6">
+                <Link
+                  href="/about"
+                  className="text-sm font-medium text-foreground transition-opacity hover:opacity-70"
+                >
+                  Read our story &rarr;
+                </Link>
               </div>
             </FadeIn>
           </div>
