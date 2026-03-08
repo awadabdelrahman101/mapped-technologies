@@ -3,7 +3,24 @@ import { ArrowRight, ArrowUpRight } from "lucide-react";
 import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
 import { FadeIn } from "@/components/fade-in";
-import { jsonLd } from "@/lib/metadata";
+import { createMetadata, jsonLd } from "@/lib/metadata";
+
+export const metadata = createMetadata({
+  title: "Research-grade Software for Medical Science",
+  description:
+    "Mapped Technologies builds AI-powered tools for medical researchers. Our flagship product, mapped, covers the full systematic review workflow — from research question to published manuscript.",
+  path: "/",
+  keywords: [
+    "mapped technologies",
+    "medical research software",
+    "systematic review platform",
+    "AI evidence synthesis",
+    "meta-analysis software",
+    "clinical research tools",
+    "living systematic review",
+    "research-grade software",
+  ],
+});
 
 const pillars = [
   {

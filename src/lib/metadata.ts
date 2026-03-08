@@ -48,11 +48,20 @@ export function createMetadata({
       siteName: SITE_NAME,
       type: "website",
       locale: "en_US",
+      images: [
+        {
+          url: `${SITE_URL}/opengraph-image`,
+          width: 1200,
+          height: 630,
+          alt: `${SITE_NAME} — Research-grade software for medical science`,
+        },
+      ],
     },
     twitter: {
       card: "summary_large_image",
       title: fullTitle,
       description,
+      images: [`${SITE_URL}/opengraph-image`],
     },
     ...(noindex && {
       robots: { index: false, follow: false },
