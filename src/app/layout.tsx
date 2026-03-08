@@ -31,6 +31,12 @@ export const metadata: Metadata = {
   description:
     "Building research-grade software for medical science. Mapped Technologies LLC develops tools that help researchers produce better evidence, faster.",
   metadataBase: new URL("https://mappedtechnologies.com"),
+  icons: {
+    icon: [
+      { url: "/favicon.png", type: "image/png" },
+    ],
+    apple: "/apple-touch-icon.png",
+  },
 };
 
 export default function RootLayout({
